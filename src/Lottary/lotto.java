@@ -224,7 +224,7 @@ public class lotto extends JFrame {
 		textField_5.setColumns(10);
 		
 		JLabel lblNewLabel_12 = new JLabel("New label");
-		lblNewLabel_12.setBounds(278, 304, 181, 16);
+		lblNewLabel_12.setBounds(278, 304, 276, 16);
 		contentPane.add(lblNewLabel_12);
 		
 		JButton btnNewButton_3 = new JButton("New button");
@@ -232,15 +232,22 @@ public class lotto extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				int a = Integer.parseInt(textField.getText());
 				int b = Integer.parseInt(textField_1.getText());
-				int c = Integer.parseInt(textField_2.getText());
-				int d = Integer.parseInt(textField_3.getText());
-				int f = Integer.parseInt(textField_4.getText());
-				int j = Integer.parseInt(textField_5.getText());
-			if(num1 == a && num1 == b && num1 == c && num1 == d && num1 == f && num1 == j && num2 == a && num2 == b && num2 == c && num2 == d && num2 == f && num2 == j ){
-					//num3 == a && num3 == b && num3 == c && num3 == d && num3 == f && num3 == j && num4 == a && num4 == b && num4 == c && num4 == d && num4 == f && num4 == j &&
-					//num5 == a && num5 == b && num5 == c && num5 == d && num5 == f && num5 == j && num6 == a && num6 == b && num6 == c && num6 == d && num6 == f && num6 == j){
-				lblNewLabel_12.setText("Имате всички познати числа печелите 90 000 000 лв!");
+			if(num1 == a && num2 == b){
+				lblNewLabel_12.setText("Имате познати две числа не печелите нищо :)");
 			}
+			if(num2 == a && num1 == b){
+				lblNewLabel_12.setText("Имате познати две числа не печелите нищо :)");
+			}
+			
+			int c = Integer.parseInt(textField_2.getText());
+			int d = Integer.parseInt(textField_3.getText());
+			if(num3 == c && num4 == d){
+				lblNewLabel_12.setText("Имате познати две числа не печелите нищо :)");
+			}
+			
+			int f = Integer.parseInt(textField_4.getText());
+			int j = Integer.parseInt(textField_5.getText());	
+			
 				
 					
 				
